@@ -1,131 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Animated Vertical Carousel</title>
-    <meta charset="utf-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <!-- BOOTSNIPP LINKS -->
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <!-- BOOTSTRAP 3.3.7 -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="css/style.css">
-  </head>
+  <!-- JQUERY -->
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
 
-  <body>
-    <section class="slide-wrapper">
-      <div class="container">
-        <div id="myCarousel" class="carousel slide">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-          </ol>
+  <link rel="stylesheet" href="css/style.css">
 
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner">
-            <div class="item item1 active">
-              <div class="fill" style="background-color: #48c3af">
-                <div class="inner-content">
-                  <div class="carousel-img">
-                    <img
-                      src="http://vocefalandoingles.com/wp-content/uploads/2016/09/sofa.png"
-                      alt="sofa"
-                      class="img img-responsive"
-                    />
-                  </div>
-                  <div class="carousel-desc">
-                    <h2>Modern Designer Sofa</h2>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Duis elit ipsum, scelerisque non semper eu, aliquet vel
-                      odio. Sed auctor id purus nec tristique. Donec euismod,
-                      urna vel dapibus tristique, dolor arcu ultrices lectus,
-                      nec pulvinar est turpis sit amet felis. Duis interdum
-                      purus quam, vitae cursus erat ornare at. Donec congue mi a
-                      ipsum tincidunt, imperdiet vehicula odio rutrum. Nam porta
-                      vulputate magna, id pretium lectus iaculis eu. Ut ut
-                      viverra libero.
-                    </p>
-                  </div>
-                </div>
-              </div>
+  <title>Bootstrap</title>
+</head>
+<body>
+
+  <div class="vertical carousel slide" id="carousel-example-generic" data-ride="false" style="background-image: url('img/bricks.jpg');">
+
+    
+    <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
+        <li data-target="#carousel-example-generic" data-slide-to="3" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="4" class=""></li>
+        <!-- <li data-target="#carousel-example-generic" data-slide-to="5" class=""></li>
+        <li data-target="#carousel-example-generic" data-slide-to="6" class=""></li> -->
+    </ol>
+    <!-- INDICATORS -->
+
+
+    <div class="carousel-inner" role="listbox">
+
+      <!-- FRONT ROOM -->
+      <div class="item active" style="background-color: rgba(193, 91, 37, 0.8);"> 
+          <div class="mainImg">
+            <img src="img/FrontRoom-1-edit.jpg" alt="carousel image">
+          </div>
+
+          <div class="rightSection">
+            <div class="subImg">
+              <img src="img/FrontRoom-2-edit.jpg" alt="carousel image">
+              <img src="img/FrontRoom-3.jpg" alt="carousel image">
             </div>
-            <div class="item item2">
-              <div class="fill" style="background-color: #b33f4a">
-                <div class="inner-content">
-                  <div class="carousel-img">
-                    <img
-                      src="http://cdn.homedit.com/wp-content/uploads/2011/08/137CLUB2ST.png"
-                      alt="white-sofa"
-                      class="img img-responsive"
-                    />
-                  </div>
-                  <div class="carousel-desc">
-                    <h2>Vintage Style Sofa</h2>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Duis elit ipsum, scelerisque non semper eu, aliquet vel
-                      odio. Sed auctor id purus nec tristique. Donec euismod,
-                      urna vel dapibus tristique, dolor arcu ultrices lectus,
-                      nec pulvinar est turpis sit amet felis. Duis interdum
-                      purus quam, vitae cursus erat ornare at. Donec congue mi a
-                      ipsum tincidunt, imperdiet vehicula odio rutrum. Nam porta
-                      vulputate magna, id pretium lectus iaculis eu. Ut ut
-                      viverra libero.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item item3">
-              <div class="fill" style="background-color: #7fc2f4">
-                <div class="inner-content">
-                  <div class="col-md-6">
-                    <div class="carousel-img">
-                      <img
-                        src="http://vocefalandoingles.com/wp-content/uploads/2016/09/sofa.png"
-                        alt="sofa"
-                        class="img img-responsive"
-                      />
-                    </div>
-                  </div>
 
-                  <div class="col-md-6 text-left">
-                    <div class="carousel-desc">
-                      <h2>Stylish Sofa</h2>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Duis elit ipsum, scelerisque non semper eu, aliquet vel
-                        odio. Sed auctor id purus nec tristique. Donec euismod,
-                        urna vel dapibus tristique, dolor arcu ultrices lectus,
-                        nec pulvinar est turpis sit amet felis. Duis interdum
-                        purus quam, vitae cursus erat ornare at. Donec congue mi
-                        a ipsum tincidunt, imperdiet vehicula odio rutrum. Nam
-                        porta vulputate magna, id pretium lectus iaculis eu. Ut
-                        ut viverra libero.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="caption">
+              <h2>The Front Room Coffeehouse</h2>
+              <p>
+                <b>1 Park Pl | 4th Floor of Baker Center</b>
+                <br>
+                With daily afternoon meetings inside Baker University Center, Front Room is very convenient whenever I need a quick-pick-me-up iced tea lemonade or warm hot chocolate in the colder months of the semester.</p>
             </div>
+          </div>
+          
+      </div>
+      
+      <!-- WEST 82 -->
+      <div class="item reverse" style="background-color: rgba(229, 135, 51, 0.8);">
+        <div class="mainImg">
+          <img src="img/West82-1-edit.jpg" alt="carousel image">
+        </div>
+        
+        <div class="rightSection">
+          <div class="subImg">
+            <img src="img/West82-2.jpg" alt="carousel image">
+            <img src="img/West82-4.jpg" alt="carousel image">
+          </div>
+
+          <div class="caption">
+            <h2>West 82</h2>
+            <p>
+              <b>1 Park Pl | 1st Floor of Baker Center</b>
+              <br>
+              If I need more than just something to quench my thirst, the loaded nachos at West 82’s Verde Blanco station are a tasty and filling on-the-go option. If time permits, I’ll grab a bowl and enjoy the beautiful Athens from Front Room’s back outside seating area.</p>
           </div>
         </div>
       </div>
-    </section>
+
+      <!-- Fry'd -->
+      <div class="item" style="background-color: rgba(229, 192, 70, 0.8);">
+        <div class="mainImg">
+          <img src="img/Fryd-1-edit.jpg" alt="carousel image">
+        </div>
+        
+        <div class="rightSection">
+          <div class="subImg">
+            <img src="img/Fryd-2.jpg" alt="carousel image">
+            <img src="img/Fryd-3-edit.jpg" alt="carousel image">
+          </div>
+
+          <div class="caption">
+            <h2>Fry'd</h2>
+            <p>
+              <b>1 Park Pl | 1st Floor of Baker Center</b>
+              <br>
+              If I need more than just something to quench my thirst, the loaded nachos at West 82’s Verde Blanco station are a tasty and filling on-the-go option. If time permits, I’ll grab a bowl and enjoy the beautiful Athens from Front Room’s back outside seating area.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- BUBBLES -->
+      <div class="item reverse" style="background-color: rgba(156, 168, 65, 0.8);">
+        <div class="mainImg">
+          <img src="img/Bubbles-1-edit.jpg" alt="carousel image">
+        </div>
+        
+        <div class="rightSection">
+          <div class="subImg">
+            <img src="img/Bubbles-1-edit.jpg" alt="carousel image">
+            <img src="img/Bubbles-2.jpg" alt="carousel image">
+          </div>
+
+          <div class="caption">
+            <h2>Bubbles</h2>
+            <p>
+              <b>1 Park Pl | 1st Floor of Baker Center</b>
+              <br>
+              If I need more than just something to quench my thirst, the loaded nachos at West 82’s Verde Blanco station are a tasty and filling on-the-go option. If time permits, I’ll grab a bowl and enjoy the beautiful Athens from Front Room’s back outside seating area.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ODYSEEY NUTRITION  -->
+      <div class="item" style="background-color: rgba(122, 195, 77, 0.8);">
+        <div class="mainImg">
+          <img src="img/Odyssey-1.jpg" alt="carousel image">
+        </div>
+        
+        <div class="rightSection">
+          <div class="subImg">
+            <img src="img/Odyssey-2.jpg" alt="carousel image">
+            <img src="img/Odyssey-3.jpg" alt="carousel image">
+          </div>
+
+          <div class="caption">
+            <h2>Odyssey Nutrition</h2>
+            <p>
+              <b>1 Park Pl | 1st Floor of Baker Center</b>
+              <br>
+              If I need more than just something to quench my thirst, the loaded nachos at West 82’s Verde Blanco station are a tasty and filling on-the-go option. If time permits, I’ll grab a bowl and enjoy the beautiful Athens from Front Room’s back outside seating area.</p>
+          </div>
+        </div>
+      </div>
+
+      
+          
+      </div>
+    
+
+      
 
 
 
-    <script src="js/custom.js"></script>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="//code.jquery.com/jquery.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+    <a href="#carousel-example-generic" class="left carousel-control" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a>
+    <a href="#carousel-example-generic" class="right carousel-control" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
+</div>
+
+<script src="js/jquery.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
 </html>
