@@ -22,7 +22,7 @@
   bottom: auto;
   top: 50%;
   left: auto;
-  right: 10px;
+  right: 1.5em;
   width: 14px;
   margin: 0;
   -webkit-transform: translateY(-50%);
@@ -71,10 +71,46 @@
 }
 
 /* --- MY CSS --- */
+body {
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  font-size: 2rem;
+}
+
+h1,
+h2 {
+  font-family: 'Luckiest Guy', cursive;
+  letter-spacing: 0.2rem;
+}
+
 div.vertical.carousel {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+}
+
+.carousel-indicators li,
+.carousel-indicators li.active {
+  width: 20px;
+  height: 20px;
+  margin: 0.3em 0;
+  border-width: 3px;
+}
+
+span.glyphicon.glyphicon-chevron-right,
+span.glyphicon.glyphicon-chevron-left {
+  font-size: 4rem;
+}
+
+.introSlide {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.introSlide h1 {
+  width: 80%;
+  padding: 0 10%;
+  font-size: 8rem;
+  text-align: center;
 }
 
 div.item.active,
@@ -82,10 +118,17 @@ div.item {
   display: flex;
   align-items: center;
   min-height: 100vh;
+  color: white;
+  /* filter: saturate(1.3); */
 }
 
 div.reverse {
   flex-direction: row-reverse;
+}
+
+div.reverse .rightSection,
+div.reverse .mainImg {
+  transform: translateX(-1.5em);
 }
 
 div.mainImg {
@@ -101,6 +144,7 @@ div.rightSection {
   display: flex;
   flex-direction: column;
   width: 40%;
+  transform: translateX(-0.3em);
 }
 
 div.subImg {
@@ -115,14 +159,63 @@ div.subImg img {
 }
 
 div.caption {
-  padding: 2em 1em;
-  color: white;
+  padding: 0;
 }
 
 .caption h2 {
   font-size: 4rem;
 }
 
-.caption p {
-  font-size: 2rem;
+.caption li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.caption b {
+  color: white;
+  text-decoration: underline;
+  font-size: 2.4rem;
+  font-weight: 900;
+  list-style: none;
+}
+
+.caption li::after {
+  content: " \1F4CD";
+  font-size: 3rem;
+  position: absolute;
+  transform: translate(0.2em, -0.1em);
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+}
+.caption li:hover::after {
+  content: " \1F4CD \27A4";
+  font-size: 3.3rem;
+  transform: translate(0.5em, -0.15em);
+  text-decoration: none;
+}
+
+#mapboxSlide .caption li::after,
+#mapboxSlide .caption li:hover::after {
+  content: '';
+}
+
+#mapboxSlide .caption b::after {
+  content: " \2B06";
+  font-size: 2.3rem;
+  position: absolute;
+  transform: translate(0.2em, 0.1em);
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+}
+
+#mapboxSlide .caption b:hover::after {
+  content: " \2B06";
+  font-size: 2.6rem;
+  transform: translate(0.7em, -0.05em);
+  text-decoration: none;
+}
+
+
+iframe.mapbox {
+  padding: 0 2em 0 3em;
 }
