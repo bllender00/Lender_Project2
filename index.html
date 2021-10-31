@@ -52,10 +52,10 @@
       <!-- FRONT ROOM -->
       <div class="item" style="background-color: hsla(21, 90%, 45%, 0.8);"> 
           <div class="leftSection">
-            <img class="mainImg" src="img/FrontRoom-1-edit.jpg" alt="carousel image">
+            <img class="mainImg" src="img/FrontRoom-1-edit.jpg" alt="The front of The Front Room Coffeehouse from inside Baker University Center.">
             <div class="subImg">
-              <img src="img/FrontRoom-2-edit.jpg" alt="carousel image">
-              <img src="img/FrontRoom-3.jpg" alt="carousel image">
+              <img src="img/FrontRoom-2-edit.jpg" alt="The message above the exit leaving the coffeehouse in Baker Center.">
+              <img src="img/FrontRoom-3.jpg" alt="The outside patio at the back of the coffeehouse.">
             </div>
           </div>
 
@@ -72,10 +72,10 @@
       <!-- WEST 82 -->
       <div class="item reverse" style="background-color: hsla(28, 90%, 55%, 0.8);">
         <div class="leftSection">
-          <img class="mainImg" src="img/West82-1-edit.jpg" alt="carousel image">
+          <img class="mainImg" src="img/West82-1-edit.jpg" alt="Thw West 82 sign.">
           <div class="subImg">
-            <img src="img/West82-3.jpg" alt="carousel image">
-            <img src="img/West82-4.jpg" alt="carousel image">
+            <img src="img/West82-3.jpg" alt="Verde Blanco food station in the West 82 food court,">
+            <img src="img/West82-4.jpg" alt="Menu at Verde Blannco.">
           </div>
         </div>
         
@@ -92,10 +92,10 @@
       <!-- Fry'd -->
       <div class="item" style="background-color: hsla(46, 90%, 59%, 0.8);">
         <div class="leftSection">
-          <img class="mainImg" src="img/Fryd-1-edit.jpg" alt="carousel image">
+          <img class="mainImg" src="img/Fryd-1-edit.jpg" alt="Main doors of Fry'd.">
           <div class="subImg">
-            <img src="img/Fryd-2.jpg" alt="carousel image">
-            <img src="img/Fryd-3-edit.jpg" alt="carousel image">
+            <img src="img/Fryd-2.jpg" alt="Interior mural painted on the wall inside the shop.">
+            <img src="img/Fryd-3-edit.jpg" alt="The disco ball that is always hanged and spinning inside the shop.">
           </div>
         </div>
         
@@ -112,10 +112,10 @@
       <!-- BUBBLES -->
       <div class="item reverse" style="background-color: hsla(67, 90%, 37%, 0.8);">
         <div class="leftSection">
-          <img class="mainImg" src="img/Bubbles-1-edit.jpg" alt="carousel image">
+          <img class="mainImg" src="img/Bubbles-1-edit.jpg" alt="The main sign at Bubbles: The Tea & Juice Company on South Court Street.">
           <div class="subImg">
             <img src="img/Bubbles-1-edit.jpg" alt="carousel image">
-            <img src="img/Bubbles-2.jpg" alt="carousel image">
+            <img src="img/Bubbles-2.jpg" alt="Inside of the Bubble shop.">
           </div>
         </div>
         
@@ -129,13 +129,13 @@
         </div>
       </div>
 
-      <!-- ODYSEEY NUTRITION  -->
+      <!-- ODYSSEY NUTRITION  -->
       <div class="item" style="background-color: 	hsla(97, 90%, 53%, 0.8);">
         <div class="leftSection">
-          <img class="mainImg" src="img/Odyssey-1.jpg" alt="carousel image">
+          <img class="mainImg" src="img/Odyssey-1.jpg" alt="The Odyssey Nutrition sign posted on the outside window of the shop.">
           <div class="subImg">
-            <img src="img/Odyssey-2.jpg" alt="carousel image">
-            <img src="img/Odyssey-3.jpg" alt="carousel image">
+            <img src="img/Odyssey-2.jpg" alt="Preview display showing what Odyssey has to offer in shakes and teas.">
+            <img src="img/Odyssey-3.jpg" alt="One of Odyssey's special teas of the month, the Jack-o-Lantern energy tea.">
           </div>
         </div>
         
@@ -151,7 +151,9 @@
 
       <!-- MAPBOX  -->
       <div class="item" id="mapboxSlide" style="background-color: hsla(98, 90%, 39%, 0.8);">
-        <iframe class="mapbox" width='55%' height='400px' src="https://api.mapbox.com/styles/v1/bllender00/ckuptukux0kh114m8ng2e3dr2.html?title=false&access_token=pk.eyJ1IjoiYmxsZW5kZXIwMCIsImEiOiJja20xdG40bnowYTM4MnhqdnByc3Btc2ZpIn0.37LNeLIJhScs7Dxl8pQbCg&zoomwheel=false#14.81/39.32714/-82.09885" title="Athens Five" style="border:none;"></iframe>
+        <iframe class="mapbox" width='55%' height='400px' src="https://api.mapbox.com/styles/v1/bllender00/ckuptukux0kh114m8ng2e3dr2.html?title=false&access_token=pk.eyJ1IjoiYmxsZW5kZXIwMCIsImEiOiJja20xdG40bnowYTM4MnhqdnByc3Btc2ZpIn0.37LNeLIJhScs7Dxl8pQbCg&zoomwheel=false#14.9/39.32664/-82.10172" title="Athens Five" style="border:none;"></iframe>
+
+        <!-- <div id="map"></div> -->
 
         <div class="rightSection">
           <div class="caption">
@@ -193,5 +195,33 @@
 <script src="js/jquery.slim.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1IjoiYmxsZW5kZXIwMCIsImEiOiJja20xdG40bnowYTM4MnhqdnByc3Btc2ZpIn0.37LNeLIJhScs7Dxl8pQbCg';
+  const map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/bllender00/ckuptukux0kh114m8ng2e3dr2',
+      center: [-82.102, 39.326],
+      zoom: 15.82
+  });
+
+  map.on('click', ({ point }) => {
+      const features = map.queryRenderedFeatures(point, {
+          layers: ['5-pit-stop-eats']
+      });
+      if (!features.length) {
+          return;
+      }
+      const feature = features[0];
+
+      const popup = new mapboxgl.Popup({ offset: [0, -15] })
+          .setLngLat(feature.geometry.coordinates)
+          .setHTML(
+              `<h3>${feature.properties.title}</h3><p>${feature.properties.description}</p>`
+          )
+          .addTo(map);
+  });
+</script>
+
 </body>
 </html>
