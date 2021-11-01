@@ -109,8 +109,18 @@ div.vertical.carousel {
 .introSlide h1 {
   width: 80%;
   padding: 0 10%;
-  font-size: 8rem;
+  font-size: 5rem;
+  line-height: 8.5rem;
+  font-family: 'Anton', sans-serif;
   text-align: center;
+  text-shadow: 2px 2px 10px #444;
+  display: flex;
+  flex-direction: column;
+}
+
+.introSlide h1 span.graffiti {
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 10rem;
 }
 
 div.item.active,
@@ -429,11 +439,35 @@ iframe.mapbox {
 
 }
 
+@media only screen and (max-width: 740px) {
+
+  .introSlide h1 {
+    margin-top: 0.2em;
+    font-size: 4rem;
+    line-height: 7.5rem;
+  }
+  
+  .introSlide h1 span.graffiti {
+    font-size: 8rem;
+  }
+
+  .introSlide h3 {
+    transform: translateY(-1.2em);
+    width: 80%;
+  }
+
+}
+
 @media only screen and (max-width: 576px) {
 
   .introSlide h1 {
     margin-top: 0em;
-    font-size: 5rem;
+    font-size: 3rem;
+    line-height: 6.5rem;
+  }
+  
+  .introSlide h1 span.graffiti {
+    font-size: 7rem;
   }
   
   div.leftSection {
@@ -540,6 +574,11 @@ iframe.mapbox {
 }
 
 @media only screen and (max-width: 425px) {
+  
+  .caption li::after {
+    margin-left: 35%;
+  }
+  
   #mapboxSlide h2 {
     font-size: 1.8rem;
   }
@@ -550,5 +589,27 @@ iframe.mapbox {
 
   #mapboxSlide .caption b {
     font-size: 1.4rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .introSlide h1 {
+    font-size: 3rem;
+    line-height: 5.5rem;
+  }
+
+  .introSlide h1 span.graffiti {
+    font-size: 6rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .introSlide h1 {
+    font-size: 3rem;
+    line-height: 4.3rem;
+  }
+
+  .introSlide h1 span.graffiti {
+    font-size: 4.5rem;
   }
 }
