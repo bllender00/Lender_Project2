@@ -411,7 +411,8 @@ iframe.mapbox {
   }
 
   .caption li::after {
-    padding: 0 0.1em;
+    padding: 0 0.1em 0;
+    margin-left: 38%;
     font-size: 2.5rem;
     transform: translate(0.3em, -0.3em);
   }
@@ -505,14 +506,10 @@ iframe.mapbox {
   }
 
   .caption li::after {
-    padding: 0 0.1em;
-    font-size: 2rem;
-    transform: translate(0.3em, 0em);
+    margin-left: 48%;
   }
   
   .caption li:hover::after {
-    font-size: 2.3rem;
-    transform: translate(0.6em, -0.1em);
     text-decoration: none;
   }
 
@@ -540,4 +537,18 @@ iframe.mapbox {
     margin-top: -3em;
   }
 
+}
+
+@media only screen and (max-width: 425px) {
+  #mapboxSlide h2 {
+    font-size: 1.8rem;
+  }
+
+  #mapboxSlide .caption {
+    font-size: 1.4rem;
+  }
+
+  #mapboxSlide .caption b {
+    font-size: 1.4rem;
+  }
 }
